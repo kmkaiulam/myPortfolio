@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a{
+      text-decoration-line: none;
+  }
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .bio{
+      padding: 0 40px;
+      margin: 0 auto;
+      max-width:800px;
+      display:flex;
+      justify-content:space-evenly;
+  }
+  .profile-pic{
+      margin-block-start:  1em;
+  }
+
+.col{
+    width:100%;
+}
+
+  .bio-text{
+      margin:5px;
+      padding: 0;
+  }
+
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+ 
+  
+  /* NAVIGATION */
+  nav {
+    position: fixed;
+    height:50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+
+  .anchor-links{
+    display:flex;
+    margin-top:5px;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
+  li{
+      margin: 0 10px;
+  }
+ 
+  
+
+  p{
+      font-size:16px;
+      padding: 0 2%;
+  }
+
+  
+  header {
+    padding: 12% 0;
+  }
+  
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+  }
+  
+.app-image{
+    max-height:500px;
+    max-width:400px;
+}
+  
+.tech-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.tech{
+    max-height:50px;
+}
+
+.description{
+    max-width:800px;
+    margin:0 auto;
+}
+
+.links{
+    margin: 50px;
+}
+.link{
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  border-radius:20px;
+  margin: 20px;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  background-color: #ce0606;
+}
+
+.link:active {
+  box-shadow: none;
+  top: 5px;
+}
+@media (max-width:760px){
+    h1{
+        font-size: 1em;
+    }
+    p{
+        font-size:.8em;
+        margin: 20px;
+    }
+    .bio{
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+    }
+    
+    .profile-pic{
+        max-width:200px;
+    }
+    .col-4{
+        width:100%;
+    }
+    .app-image{
+        max-width:275px;
+    }
+    
+}
+
+@media (max-width:500px){
+    h1{
+        font-size: 1em;
+    }
+    p{
+        font-size:.6em;
+        margin: 20px;
+    }
+    .bio{
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+    }
+    
+    .profile-pic{
+        max-width:200px;
+    }
+    .col-4{
+        width:100%;
+    }
+    .app-image{
+        max-width:275px;
+    }
+    li{
+       font-size:.8em;
+    }
+   
+    
+}
