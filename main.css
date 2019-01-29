@@ -1,45 +1,34 @@
 * {
     box-sizing: border-box;
-  }
+}
   
-  a{
-      text-decoration-line: none;
-  }
-  body {
+ a{
+    text-decoration-line: none;
+}
+  
+ body {
     font-family: "Open Sans",
     sans-serif; 
     font-size: 20px;
     color: #444;
     text-align: center;
     line-height: 1.5;
-  }
-  
-  .bio{
-      padding: 0 40px;
-      margin: 0 auto;
-      max-width:800px;
-      display:flex;
-      justify-content:space-evenly;
-  }
-  .profile-pic{
-      margin-block-start:  1em;
-  }
+}
+
+p{
+    font-size:16px;
+    padding: 0 2%;
+}
+
+section {
+    min-height: 150px;
+    padding: 6% 0;
+}
 
 .col{
     width:100%;
 }
 
-  .bio-text{
-      margin:5px;
-      padding: 0;
-  }
-
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
- 
-  
   /* NAVIGATION */
   nav {
     position: fixed;
@@ -63,23 +52,59 @@
       margin: 0 10px;
   }
  
-  
-
-  p{
-      font-size:16px;
-      padding: 0 2%;
+  /*Header*/
+  header{
+      background-image: url('./public/images/profile/hero-img.jpg');
+      background-repeat: none;
+      background-size: cover;
+      background-position: center top;
+      padding: 12% 0;
   }
 
-  
-  header {
-    padding: 12% 0;
+  .header-info{
+      background-color:rgba(251,251,251,.5);
+      display:flex;
+      flex-direction:column;
+      margin:0 auto;
+      max-width: 600px;
+      border-radius:20px;
+
   }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-  }
-  
+
+/* ABOUT ME */
+#about{
+    background-color:rgba(183,211,210,.5)
+}
+.profile-pic{
+    margin-block-start:  1em;
+}
+
+.bio{
+    padding: 0 40px;
+    margin: 0 auto;
+    max-width:800px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.bio-text{
+      margin:5px;
+      padding: 0;
+}
+
+/* PROJECTS */
+#projects{
+    background-color:rgba(214, 214, 214, 0.568)
+}
+.my-projects{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.hungry-hunter{
+    margin-left:2%;
+    margin-right:2%;
+}
 .app-image{
     max-height:500px;
     max-width:400px;
@@ -89,6 +114,10 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:white;
+    border:2px black;
 }
 
 .tech{
@@ -96,12 +125,16 @@
 }
 
 .description{
-    max-width:800px;
-    margin:0 auto;
+    max-width:600px;
+    margin:0 auto 10px auto;
+    min-height:100px;
 }
 
 .links{
     margin: 50px;
+    display:flex;
+    justify-content: center;
+    
 }
 .link{
   background-color: red;
@@ -123,22 +156,34 @@
   box-shadow: none;
   top: 5px;
 }
+
+
+/* CONTACT */
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+}
+.contact-icon{
+    font-size:-webkit-xxx-large;
+}
+ 
+
+
 @media (max-width:760px){
     h1{
         font-size: 1em;
     }
     p{
-        font-size:.8em;
+        font-size:.6em;
         margin: 20px;
     }
     .bio{
         display:flex;
         justify-content:space-evenly;
-        flex-wrap:wrap;
     }
     
     .profile-pic{
-        max-width:200px;
+        max-width:250px;
     }
     .col-4{
         width:100%;
@@ -149,7 +194,7 @@
     
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
     h1{
         font-size: 1em;
     }
@@ -176,5 +221,20 @@
        font-size:.8em;
     }
    
+    .tech-wrapper{
+        max-width:300px;
+    }
+    .tech{
+        max-height: 40px;
+    }
+    .description{
+        max-width:300px;
+    }
+
+    .link{
+        font-size:.8em;
+        margin: 5px; 
+    }
     
 }
+
