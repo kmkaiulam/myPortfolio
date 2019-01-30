@@ -5,10 +5,15 @@
  a{
     text-decoration-line: none;
 }
-  
+  h1, h2{
+    font-family:'Roboto Slab', serif !important;
+  }
+  h3{
+    font-family: 'Montserrat' !important;
+  }
+
  body {
-    font-family: 'Poppins',
-    sans-serif; 
+    font-family: 'Montserrat' ,sans-serif;
     font-size: 20px;
     color: #444;
     text-align: center;
@@ -49,6 +54,7 @@ section {
     border-radius: 20px;
     box-shadow: 0 3px 0 white;
     background-color:aliceblue;
+    font-family:'Roboto Slab', serif;
 }
 .nav-btn:hover{
     background-color:darkcyan;
@@ -74,7 +80,6 @@ section {
   }
 
   .header-info{
-      font-family: 'Roboto', sans-serif;
       background-color:rgba(251,251,251,.5);
       display:flex;
       flex-direction:column;
@@ -109,11 +114,16 @@ section {
 #projects{
     background-color:rgba(243, 243, 167, 1)
 }
+.app-info{
+    max-height:500px;
+}
 .my-projects{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
 }
+
+
 .hungry-hunter{
     margin-left:2%;
     margin-right:2%;
@@ -153,7 +163,7 @@ section {
   background-color: red;
   box-shadow: 0 5px 0 darkred;
   border-radius:20px;
-  margin: 20px;
+  margin: 0 35px;
   color: black;
   text-shadow: 0 1px 0 white;
   padding: 1em 1.5em;
