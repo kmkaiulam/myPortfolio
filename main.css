@@ -45,12 +45,18 @@ section {
 .nav-btn{
     width: 200px;
     font-size:20px;
+    margin-right:5px;
+    border-radius: 20px;
+    box-shadow: 0 3px 0 white;
+    background-color:aliceblue;
 }
-
-  .anchor-links{
+.nav-btn:hover{
+    background-color:darkcyan;
+}
+  .anchor-btns{
     display:flex;
     margin-top:0;
-    float:right;
+    justify-content:flex-end;
     list-style-type:none;
 }
 
@@ -148,7 +154,8 @@ section {
   box-shadow: 0 5px 0 darkred;
   border-radius:20px;
   margin: 20px;
-  color: white;
+  color: black;
+  text-shadow: 0 1px 0 white;
   padding: 1em 1.5em;
   position: relative;
   text-decoration: none;
@@ -224,12 +231,11 @@ section {
         flex-wrap:wrap;
     }
       
-.nav-btn{
+    .nav-btn{
     width:80px;
     font-size:14px;
-}
+    }
 
-    
     .profile-pic{
         max-width:200px;
     }
