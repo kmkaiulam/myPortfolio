@@ -1,10 +1,10 @@
-## myPortfolio
+# myPortfolio
 
-# Link
+## Link
 https://kmkaiulam.github.io/myPortfolio/
 
-# Summary:
+## Summary:
 A clean layout to display my projects and say a little about me
 
-# Technologies
+## Technologies
 HTML, CSS, JavaScript
