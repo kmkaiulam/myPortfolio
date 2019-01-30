@@ -86,7 +86,7 @@ section {
 
 /* ABOUT ME */
 #about{
-    background-color:rgba(183,211,210,.5)
+    background-color:rgba(133,175,194,1)
 }
 .profile-pic{
     margin-block-start:  1em;
@@ -107,7 +107,7 @@ section {
 
 /* PROJECTS */
 #projects{
-    background-color:rgba(214, 214, 214, 0.568)
+    background-color:rgba(243, 243, 167, 1)
 }
 .my-projects{
     display:flex;
