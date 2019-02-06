@@ -1,28 +1,33 @@
 * {
     box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
 }
   
  a{
     text-decoration-line: none;
 }
-  h1, h2{
-    font-family:'Roboto Slab', serif !important;
-  }
-  h3{
-    font-family: 'Montserrat' !important;
-  }
+ 
+h1{
+    font-size:3em;
+}
+h2{
+    font-size:2em;
+}
+h3{
+    font-size:1.5em;
+}
 
  body {
-    font-family: 'Montserrat' ,sans-serif;
     font-size: 20px;
     color: #444;
     text-align: center;
     line-height: 1.5;
 }
 
-p{
-    font-size:16px;
+.bio-text{
+    font-size:26px;
     padding: 0 2%;
+    margin-top:50px
 }
 
 section {
@@ -51,10 +56,10 @@ section {
     width: 200px;
     font-size:20px;
     margin-right:5px;
-    border-radius: 20px;
+ 
     box-shadow: 0 3px 0 white;
     background-color:aliceblue;
-    font-family:'Roboto Slab', serif;
+
 }
 .nav-btn:hover{
     background-color:darkcyan;
@@ -77,6 +82,7 @@ section {
       background-size: cover;
       background-position: center top;
       padding: 12% 0;
+      background-attachment:fixed;
   }
 
   .header-info{
@@ -95,20 +101,17 @@ section {
 }
 .profile-pic{
     margin-block-start:  1em;
+    max-width:500px;
 }
 
 .bio{
     padding: 0 40px;
     margin: 0 auto;
-    max-width:800px;
+    max-width:1600px;
     display:flex;
     justify-content:space-evenly;
 }
 
-.bio-text{
-      margin:5px;
-      padding: 0;
-}
 
 /* PROJECTS */
 #projects{
@@ -185,28 +188,49 @@ section {
 
 
 /* CONTACT */
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-    font-family: 'Roboto', sans-serif;
-}
 .contact-icon{
     font-size:-webkit-xxx-large;
+}
+.contact-links{
+  margin:10px;  
 }
 .resume{
     margin: 20px auto;
     font-size:1.6em;
-    text-transform:uppercase;
 }
 
 
+footer {
+    padding: 1% 0;
 
+}
+
+@media (max-width:1200px){
+    .bio-text{
+        font-size:18px;
+        margin-top:0;
+    }
+    .profile-pic{
+        max-width:400px;
+    }
+    
+    .bio{
+        max-width:800px;
+        
+    }
+}
 
 
 
 @media (max-width:760px){
     h1{
-        font-size: 1em;
+        font-size: 2em;
+    }
+    h2{ 
+        font-size:1.5em;
+    }
+    h3{
+        font-size:1em;
     }
     p{
         font-size:.6em;
@@ -236,9 +260,9 @@ section {
     }
 }
 
-@media (max-width:600px){
-    h1{
-        font-size: 1em;
+@media (max-width:680px){
+    h1,h2,h3{
+        font-size:1em;
     }
     p{
         font-size:.6em;
