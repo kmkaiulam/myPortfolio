@@ -91,7 +91,7 @@ section {
 
 /* ABOUT ME */
 #about{
-    background-color:rgba(133,175,194,1)
+   background-color: #F8F5F2;
 }
 .profile-pic{
     margin-block-start:  1em;
@@ -112,7 +112,8 @@ section {
 
 /* PROJECTS */
 #projects{
-    background-color:rgba(243, 243, 167, 1)
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgb(48, 61, 235) 0%, #74ebd5 50%, #ACB6E5 30%);
 }
 .app-info{
     max-height:500px;
@@ -121,16 +122,17 @@ section {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+  
+}
+
+.hungry-hunter, .bandaide, .lunchery{
+    background: rgba(255,255,255,.5);
+    min-width: 800px;
 }
 
 
-.hungry-hunter{
-    margin-left:2%;
-    margin-right:2%;
-}
 .app-image{
     max-height:500px;
-    max-width:400px;
 }
   
 .tech-wrapper{
@@ -163,7 +165,7 @@ section {
   background-color: red;
   box-shadow: 0 5px 0 darkred;
   border-radius:20px;
-  margin: 0 35px;
+  margin: 115px 35px 0;
   color: black;
   text-shadow: 0 1px 0 white;
   padding: 1em 1.5em;
@@ -214,17 +216,24 @@ section {
         display:flex;
         justify-content:space-evenly;
     }
-    
+    .description{
+        min-height: 0
+    }
+    .link{
+        margin: 50px 35px 0;
+    }
     .profile-pic{
-        max-width:250px;
+        max-width:300px;
     }
     .col-4{
         width:100%;
     }
     .app-image{
-        max-width:275px;
+        max-width:500px;
     }
-    
+    .hungry-hunter, .bandaide, .lunchery{
+        min-width: 600px;
+    }
 }
 
 @media (max-width:600px){
@@ -253,7 +262,7 @@ section {
         width:100%;
     }
     .app-image{
-        max-width:275px;
+        max-width: 400px;
     }
     li{
        font-size:.8em;
@@ -273,6 +282,16 @@ section {
         font-size:.8em;
         margin: 5px; 
     }
+
+    .hungry-hunter, .bandaide, .lunchery{
+        min-width: 0;
+    }
     
+}
+
+@media (max-width:500px){
+    .app-image{
+        max-width: 275px;
+    }
 }
 
