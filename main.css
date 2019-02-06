@@ -235,8 +235,10 @@ footer {
     }
     
     .bio{
-        max-width:800px;
-        
+        max-width:800px; 
+    }
+    #contact{
+        height:700px;
     }
 }
 
@@ -277,6 +279,21 @@ footer {
     }
     .hungry-hunter, .bandaide, .lunchery{
         min-width: 600px;
+    }
+    #contact{
+        height:500px;
+    }
+    .contact-link:hover{
+        font-size:inherit;
+        text-transform: none;
+    }
+    .resume{
+        margin: 20px auto;
+        font-size:1.6em;
+    }
+    #contact{
+        font-size:1em;
+        text-emphasis: wrap;
     }
 }
 
@@ -330,6 +347,9 @@ footer {
     .hungry-hunter, .bandaide, .lunchery{
         min-width: 0;
     }
+    #contact{
+        height:400px;
+    }
     
 }
 
@@ -338,4 +358,5 @@ footer {
         max-width: 275px;
     }
 }
+
 
