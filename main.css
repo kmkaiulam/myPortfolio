@@ -97,7 +97,9 @@ section {
 
 /* ABOUT ME */
 #about{
-   background-color: #F8F5F2;
+   background-color: #9eadf3;
+   color:black;
+
 }
 .profile-pic{
     margin-block-start:  1em;
@@ -115,6 +117,7 @@ section {
 
 /* PROJECTS */
 #projects{
+    color:black;
     background: rgb(2,0,36);
     background: linear-gradient(135deg, rgb(48, 61, 235) 0%, #74ebd5 50%, #ACB6E5 30%);
 }
@@ -188,15 +191,33 @@ section {
 
 
 /* CONTACT */
+#contact{
+    color:black;
+    background-color:rgb(222,229,244);
+    height:700px;
+}
 .contact-icon{
     font-size:-webkit-xxx-large;
 }
 .contact-links{
-  margin:10px;  
+  margin:2px;  
+}
+
+.contact-link:hover{
+
+    font-size:2em;
+    text-transform: full-width;
+    transition-duration:.40s;
 }
 .resume{
     margin: 20px auto;
     font-size:1.6em;
+}
+
+.resume:hover{
+    font-size:2em;
+    text-transform: full-width;
+    transition-duration:.40s;
 }
 
 
